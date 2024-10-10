@@ -1,3 +1,13 @@
-remote_theme: pages-themes/cayman@v0.2.0
+title: "Laboratory of Cell Ethology"
+description: "Aligning biological AI with human good at Stanford University"
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache
+
+# remote_theme: mmistakes/minimal-mistakes@4.26.2
+# plugins:
+# - jekyll-remote-theme # add this line to the plugins list if you already have one
+# - jekyll-include-cache

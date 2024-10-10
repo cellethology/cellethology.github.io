@@ -1,0 +1,10 @@
+.publications-page {
+    padding-top: 50px; /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+    .publications-page {
+        padding-top: 80px; /* Slightly less padding on smaller screens */
+    }
+}
+
