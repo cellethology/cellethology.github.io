@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+
+# Jekyll build directory
+_site/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Environment files (for security, if they exist)
+.env
+.env.local
+.env.*.local
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Python bytecode files (if applicable)
+__pycache__/
+*.py[cod]
+
+# Compiled binaries and packages
+*.dll
+*.exe
+*.so
+*.dylib
+
+# Thumbnails
+Thumbs.db
+
+# Files for VS Code
+.vscode/
+
+# Editor-specific folders and files
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Operating System files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
