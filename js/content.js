@@ -26,6 +26,12 @@ const siteContent = {
     // Publications
     selectedPublications: [
         {
+            title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
+            description: "A foundation model for cell microscopy",
+            image: "/asset/pub/cells.png",
+            url: "https://openreview.net/pdf?id=3EbighfxpM"
+        },
+        {
             title: "Identifying perturbations that boost T-cell infiltration into tumors via counterfactual learning of their spatial proteomic profiles",
             description: "Find drug targets from tumor images",
             image: "/asset/pub/tumor.png",
