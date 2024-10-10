@@ -19,7 +19,7 @@
 }
 
 .logo img {
-    height: 50px; /* Adjust this value to match your desired logo size */
+    height: 35px; /* Adjust this value to match your desired logo size */
     width: auto; /* This maintains the aspect ratio of your logo */
     vertical-align: middle; /* This aligns the logo vertically with the text */
 }
@@ -64,7 +64,7 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-family: "Roboto Slab", serif;
     transition: color 0.2s ease;
     margin-left: 20px;
@@ -128,7 +128,7 @@ body.scrolled nav {
     padding: 2rem;
     margin-left: 0%; /* Change this line */
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .hero .subtitle {
@@ -341,28 +341,40 @@ footer p {
     text-decoration: underline;
 }
 
-@media (max-width: 1400px) {
-    .hero-content {
-        max-width: 100%;
-        padding: 0 2rem;
-    }
-}
 
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .hero-text, .hero-image {
-        flex: none;
-        width: 100%;
+    .hero-text {
+        padding: 1rem;
+        margin-bottom: 1.5rem; /* Add more space below text */
+    }
+
+    .learn-more-btn {
+        position: relative; /* Remove absolute positioning */
+        margin-bottom: 2rem; /* Add some spacing */
     }
 
     .hero-image {
-        height: 50vh;
+        order: 2;
+        height: 40vh; /* Adjust height for smaller screens */
+        width: 100%;
     }
+}
 
-    .hero h1 {
-        font-size: 2.5rem;
+@media (max-width: 768px) {
+    .research-areas {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
