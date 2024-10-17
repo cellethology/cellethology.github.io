@@ -29,7 +29,7 @@ const siteContent = {
             title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
             description: "A foundation model for cell microscopy",
             image: "/asset/pub/cells.png",
-            url: "https://openreview.net/pdf?id=3EbighfxpM"
+            url: "https://openreview.net/forum?id=niywLsa54R"
         },
         {
             title: "Identifying perturbations that boost T-cell infiltration into tumors via counterfactual learning of their spatial proteomic profiles",
@@ -58,7 +58,7 @@ const siteContent = {
             authors: "Kian Kenyon-Dean, Zitong Jerry Wang, John Urbanik, Konstantin Donhauser, Jason Hartford, Saber Saberian, Nil Sahin, Ihab Bendidi, Safiye Celik, Marta Fay, Juan Sebastián Rodríguez Vera, Imran S Haque, Oren Kraus ",
             journal: "arXiv (2024)",
             image: "/asset/pub/cells.png",
-            url: "https://openreview.net/pdf?id=3EbighfxpM"
+            url: "https://openreview.net/forum?id=niywLsa54R"
         },
         {
             title: "Identifying perturbations that boost T-cell infiltration into tumors via counterfactual learning of their spatial proteomic profiles",
