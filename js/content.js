@@ -63,7 +63,7 @@ const siteContent = {
         {
             title: "Identifying perturbations that boost T-cell infiltration into tumors via counterfactual learning of their spatial proteomic profiles",
             authors: "Zitong Jerry Wang, Abdullah Farooq, Yu-Jen Chen, Aman Bhargava, Alexander Xu, Matt Thomson",
-            journal: "bioRxiv (2024), Nature Biomedical Engineering (in press)",
+            journal: "Nature Biomedical Engineering (in press)",
             image: "/asset/pub/tumor.png",
             url: "https://www.biorxiv.org/content/10.1101/2023.10.12.562107v3"
         },
