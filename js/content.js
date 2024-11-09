@@ -56,7 +56,7 @@ const siteContent = {
         {
             title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
             authors: "Kian Kenyon-Dean, Zitong Jerry Wang, John Urbanik, Konstantin Donhauser, Jason Hartford, Saber Saberian, Nil Sahin, Ihab Bendidi, Safiye Celik, Marta Fay, Juan Sebastián Rodríguez Vera, Imran S Haque, Oren Kraus ",
-            journal: "arXiv (2024)",
+            journal: "arXiv (2024), ICLR FM4Science Runner-up Best Paper",
             image: "/asset/pub/cells.png",
             url: "https://openreview.net/forum?id=niywLsa54R"
         },
