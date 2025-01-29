@@ -26,10 +26,10 @@ const siteContent = {
     // Publications
     selectedPublications: [
         {
-            title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
-            description: "A foundation model for cell microscopy",
+            title: "Building Foundation Models to Characterize Cellular Interactions via Geometric Self-Supervised Learning on Spatial Genomics",
+            description: "A foundation model for cell interactions",
             image: "/asset/pub/cells.png",
-            url: "https://openreview.net/forum?id=niywLsa54R"
+            url: "https://www.biorxiv.org/content/10.1101/2025.01.25.634867v1"
         },
         {
             title: "Identifying perturbations that boost T-cell infiltration into tumors via counterfactual learning of their spatial proteomic profiles",
@@ -54,18 +54,25 @@ const siteContent = {
     // Publications
     allPublications: [
         {
-            title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
-            authors: "Kian Kenyon-Dean, Zitong Jerry Wang, John Urbanik, Konstantin Donhauser, Jason Hartford, Saber Saberian, Nil Sahin, Ihab Bendidi, Safiye Celik, Marta Fay, Juan Sebastián Rodríguez Vera, Imran S Haque, Oren Kraus ",
-            journal: "arXiv (2024), ICLR FM4Science Runner-up Best Paper",
-            image: "/asset/pub/cells.png",
-            url: "https://openreview.net/forum?id=niywLsa54R"
+            title: "Building Foundation Models to Characterize Cellular Interactions via Geometric Self-Supervised Learning on Spatial Genomics",
+            authors: "Yuning You, Zitong Jerry Wang, Kevin Fleisher, Rex Liu, Matt Thomson",
+            journal: "BioRxiv (2025)",
+            image: "/asset/pub/CIFM.png",
+            url: "https://www.biorxiv.org/content/10.1101/2025.01.25.634867v1"
         },
         {
             title: "Identifying perturbations that boost T-cell infiltration into tumors via counterfactual learning of their spatial proteomic profiles",
             authors: "Zitong Jerry Wang, Abdullah Farooq, Yu-Jen Chen, Aman Bhargava, Alexander Xu, Matt Thomson",
-            journal: "Nature Biomedical Engineering (in press)",
+            journal: "Nature Biomedical Engineering (2025)",
             image: "/asset/pub/tumor.png",
             url: "https://www.biorxiv.org/content/10.1101/2023.10.12.562107v3"
+        },
+        {
+            title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
+            authors: "Kian Kenyon-Dean, Zitong Jerry Wang, John Urbanik, Konstantin Donhauser, Jason Hartford, Saber Saberian, Nil Sahin, Ihab Bendidi, Safiye Celik, Marta Fay, Juan Sebastián Rodríguez Vera, Imran S Haque, Oren Kraus ",
+            journal: "ICLR FM4Science Runner-up Best Paper (2024)",
+            image: "/asset/pub/cells.png",
+            url: "https://openreview.net/forum?id=niywLsa54R"
         },
         {
             title: "Multi-ContrastiveVAE disentangles perturbation effects in single cell images from optical pooled screens",
