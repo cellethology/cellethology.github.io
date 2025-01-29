@@ -28,7 +28,7 @@ const siteContent = {
         {
             title: "Building Foundation Models to Characterize Cellular Interactions via Geometric Self-Supervised Learning on Spatial Genomics",
             description: "A foundation model for cell interactions",
-            image: "/asset/pub/cells.png",
+            image: "/asset/pub/CIFM.png",
             url: "https://www.biorxiv.org/content/10.1101/2025.01.25.634867v1"
         },
         {
