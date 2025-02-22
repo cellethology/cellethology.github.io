@@ -54,6 +54,13 @@ const siteContent = {
     // Publications
     allPublications: [
         {
+            title: "A cellular solution to a robotics problem",
+            authors: "Zitong Jerry Wang, Matt Thomson",
+            journal: "BioRxiv (2025)",
+            image: "/asset/pub/robotic.png",
+            url: "https://www.biorxiv.org/content/10.1101/2025.02.12.637580v1"
+        },
+        {
             title: "Building Foundation Models to Characterize Cellular Interactions via Geometric Self-Supervised Learning on Spatial Genomics",
             authors: "Yuning You, Zitong Jerry Wang, Kevin Fleisher, Rex Liu, Matt Thomson",
             journal: "BioRxiv (2025)",
