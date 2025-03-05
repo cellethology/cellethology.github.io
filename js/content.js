@@ -72,7 +72,7 @@ const siteContent = {
             authors: "Zitong Jerry Wang, Abdullah Farooq, Yu-Jen Chen, Aman Bhargava, Alexander Xu, Matt Thomson",
             journal: "Nature Biomedical Engineering (2025)",
             image: "/asset/pub/tumor.png",
-            url: "https://www.biorxiv.org/content/10.1101/2023.10.12.562107v3"
+            url: "https://www.nature.com/articles/s41551-025-01357-0"
         },
         {
             title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
