@@ -382,6 +382,17 @@ footer p {
     }
 }
 
+@media (max-width: 768px) {
+    .logo img {
+        height: auto; /* Allow the height to adjust automatically */
+        width: 100px; /* Set a fixed width for the logo */
+    }
+
+    nav a {
+        font-size: 0.8rem; /* Decrease font size for nav links */
+    }
+}
+
 img {
     max-width: 100%;
     height: auto;
