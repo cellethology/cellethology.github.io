@@ -18,7 +18,7 @@ const siteContent = {
         },
         {
             title: "Interpreting models",
-            image: "/asset/cube.png",
+            image: "/asset/cube.webp",
             description: "We mostly treat AI models as a black box: something goes in and a response comes out. This is not acceptable for models that will be used to treat human diseases. "
         },
     ],
