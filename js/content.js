@@ -8,12 +8,12 @@ const siteContent = {
     researchAreas: [
         {
             title: "Animating tissue",
-            image: "/asset/filming_tissue.webp",
+            image: "/asset/tissue_resized.webp",
             description: "Cell dynamics is a product of its environment. Learning how cells behave in their native tissue context is crucial for identifying effective therapeutic targets"
         },
         {
             title: "Designing cells",
-            image: "/asset/cajal_neuron.webp",
+            image: "/asset/cajal_neuron_resized.webp",
             description: "Cells reprogrammed to treat diseases display highly variable behavior inside patients. We need to engineer more consistent behavior in inconsistent environments."
         },
         {

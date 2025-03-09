@@ -108,7 +108,7 @@ body.scrolled nav {
 .hero-image {
     flex: 1;
     height: 90vh;
-    background-image: url('/asset/westlake-sepia.webp');
+    background-image: url('/asset/sepia_resized.webp');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -385,7 +385,7 @@ footer p {
 @media (max-width: 768px) {
     .logo img {
         height: auto; /* Allow the height to adjust automatically */
-        width: 100px; /* Set a fixed width for the logo */
+        width: 50px; /* Set a fixed width for the logo */
     }
 
     nav a {
