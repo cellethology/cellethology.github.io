@@ -15,12 +15,6 @@
     padding-top: 2rem;
 }
 
-.team-content h1 {
-    font-family: "Roboto Slab", serif;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
 .team-content p {
     font-size: 1rem;
     color: #666;
@@ -40,10 +34,51 @@
     padding-top: 1rem;
 }
 
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    flex: 1 1 calc(25% - 2rem); /* Adjust to 25% for 4 per row */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    text-align: right; /* Right-align text */
+}
+
+.team-member img {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    object-position: right; /* Right-align the image */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
+    margin-bottom: 0.2rem; /* Reduced margin-bottom */
+    text-align: right; /* Right-align the team member name */
+}
+
+.team-member p {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: right; /* Right-align the team member title */
+}
+
 @media (max-width: 1024px) {
     .team-container {
         width: 95%;
         margin-left: 52.5%;
+    }
+
+    .team-member {
+        flex: 1 1 calc(33.333% - 2rem); /* Adjust to 33.333% for 3 per row */
     }
 }
 
@@ -68,5 +103,9 @@
         width: 100%;
         height: auto;
         max-height: none;
+    }
+
+    .team-member {
+        flex: 1 1 calc(50% - 2rem); /* Adjust to 50% for 2 per row */
     }
 }

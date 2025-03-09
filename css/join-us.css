@@ -29,13 +29,6 @@
     padding-top: 2rem;
 }
 
-.join-us-content h1 {
-    font-family: "Roboto Slab", serif;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    font-weight: 400;
-}
-
 .join-us-content h2 {
     font-family: "Roboto Slab", serif;
     font-size: 1.5rem;
@@ -45,7 +38,7 @@
 
 .join-us-content p, 
 .join-us-content ul {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
     font-weight: 200;

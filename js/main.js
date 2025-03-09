@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load publications
     loadPublications();
     
+    // Load team members
+    loadTeamMembers();
+    
     // Update footer
     const footerLabName = document.getElementById('footer-lab-name');
     const footerDepartment = document.getElementById('footer-department');
@@ -65,7 +68,7 @@ function loadPublications() {
             pubElement.target = "_blank";
             
             let innerContent = `
-                <img src="${pub.image}">
+                <img src="${pub.image}" loading="lazy">
                 <div class="publication-text">
                     <h3>${pub.title}</h3>
             `;
@@ -83,8 +86,24 @@ function loadPublications() {
 
             innerContent += `</div>`;
             pubElement.innerHTML = innerContent;
-            
             publicationsList.appendChild(pubElement);
+        });
+    }
+}
+
+function loadTeamMembers() {
+    const teamMembersContainer = document.getElementById('team-members');
+    if (teamMembersContainer) {
+        teamMembersContainer.innerHTML = ''; // Clear existing content
+        siteContent.teamMembers.forEach(member => {
+            const memberElement = document.createElement('div');
+            memberElement.className = 'team-member';
+            memberElement.innerHTML = `
+                <img src="${member.image}" loading="lazy">
+                <h3>${member.name}</h3>
+                <p>${member.title}</p>
+            `;
+            teamMembersContainer.appendChild(memberElement);
         });
     }
 }

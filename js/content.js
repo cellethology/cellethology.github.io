@@ -102,5 +102,29 @@ const siteContent = {
             image: "/asset/pub/clock.png",
             url: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.104.044406"
         }
+    ],
+
+    // Team Members
+    teamMembers: [
+        {
+            name: "Jerry Wang",
+            image: "/asset/team/jerry_wang.jpg",
+            title: "Principal Investigator"
+        },
+        {
+            name: "Shiyu Jiang",
+            image: "/asset/team/shiyu_jiang.jpg",
+            title: "Visiting Student"
+        },
+        {
+            name: "Lanning Liu",
+            image: "/asset/team/lanning_liu.jpg",
+            title: "Administrative Assistant"
+        },
+        {
+            name: "Xuyin Liu",
+            image: "/asset/team/xuyin_liu.jpg",
+            title: "Research Assistant"
+        },
     ]
 };
