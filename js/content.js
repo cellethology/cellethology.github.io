@@ -35,7 +35,7 @@ const siteContent = {
             title: "Identifying perturbations that boost T-cell infiltration into tumors via counterfactual learning of their spatial proteomic profiles",
             description: "Find drug targets from tumor images",
             image: "/asset/pub/tumor.png",
-            url: "https://www.biorxiv.org/content/10.1101/2023.10.12.562107v3"
+            url: "https://www.nature.com/articles/s41551-025-01357-0"
         },
         {
             title: "Localization of signaling receptors maximizes cellular information acquisition in spatially structured natural environments",
