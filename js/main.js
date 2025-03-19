@@ -70,14 +70,16 @@ function loadPublications() {
             let innerContent = `
                 <img src="${pub.image}" loading="lazy">
                 <div class="publication-text">
-                    <h3>${pub.title}</h3>
-            `;
+                    <h3>${pub.title}</h3>`;
 
             if (isAllPublications) {
                 innerContent += `
                     <p class="authors">${pub.authors}</p>
-                    <p class="journal">${pub.journal}</p>
-                `;
+                    <p class="journal">${pub.journal}`;
+                if (pub.pdf) {
+                    innerContent += ` <a href="${pub.pdf}" target="_blank" class="pdf-link">(PDF)</a>`;
+                }
+                innerContent += `</p>`;
             } else {
                 innerContent += `
                     <p class="description">${pub.description}</p>

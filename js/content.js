@@ -34,19 +34,19 @@ const siteContent = {
         {
             title: "Identifying perturbations that boost T-cell infiltration into tumors via counterfactual learning of their spatial proteomic profiles",
             description: "Find drug targets from tumor images",
-            image: "/asset/pub/tumor.webp",
+            image: "/asset/pub/counterfactual.webp",
             url: "https://www.nature.com/articles/s41551-025-01357-0"
         },
         {
             title: "Localization of signaling receptors maximizes cellular information acquisition in spatially structured natural environments",
             description: "How cells navigate complex environments",
-            image: "/asset/pub/cell_sense.webp",
+            image: "/asset/pub/receptor.webp",
             url: "https://www.cell.com/cell-systems/fulltext/S2405-4712(22)00225-3"
         },
         {
             title: "Inferring gene regulation dynamics from static snapshots of gene expression variability",
             description: "Learn dynamical systems from non-dynamical data",
-            image: "/asset/pub/clock.webp",
+            image: "/asset/pub/pre_2021.webp",
             url: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.104.044406"
         }
     ],
@@ -58,49 +58,64 @@ const siteContent = {
             authors: "Zitong Jerry Wang, Matt Thomson",
             journal: "BioRxiv (2025)",
             image: "/asset/pub/robotic.webp",
-            url: "https://www.biorxiv.org/content/10.1101/2025.02.12.637580v1"
+            url: "https://www.biorxiv.org/content/10.1101/2025.02.12.637580v1",
+            pdf: "/asset/pdfs/robotic.pdf"
         },
         {
             title: "Building Foundation Models to Characterize Cellular Interactions via Geometric Self-Supervised Learning on Spatial Genomics",
             authors: "Yuning You, Zitong Jerry Wang, Kevin Fleisher, Rex Liu, Matt Thomson",
             journal: "BioRxiv (2025)",
             image: "/asset/pub/CIFM.webp",
-            url: "https://www.biorxiv.org/content/10.1101/2025.01.25.634867v1"
+            url: "https://www.biorxiv.org/content/10.1101/2025.01.25.634867v1",
+            pdf: "/asset/pdfs/CIFM.pdf"
         },
         {
             title: "Identifying perturbations that boost T-cell infiltration into tumors via counterfactual learning of their spatial proteomic profiles",
             authors: "Zitong Jerry Wang, Abdullah Farooq, Yu-Jen Chen, Aman Bhargava, Alexander Xu, Matt Thomson",
             journal: "Nature Biomedical Engineering (2025)",
-            image: "/asset/pub/tumor.webp",
-            url: "https://www.nature.com/articles/s41551-025-01357-0"
+            image: "/asset/pub/counterfactual.webp",
+            url: "https://www.nature.com/articles/s41551-025-01357-0",
+            pdf: "/asset/pdfs/counterfactual.pdf"
         },
         {
             title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
             authors: "Kian Kenyon-Dean, Zitong Jerry Wang, John Urbanik, Konstantin Donhauser, Jason Hartford, Saber Saberian, Nil Sahin, Ihab Bendidi, Safiye Celik, Marta Fay, Juan Sebastián Rodríguez Vera, Imran S Haque, Oren Kraus ",
             journal: "ICLR FM4Science Runner-up Best Paper (2024)",
-            image: "/asset/pub/cells.webp",
-            url: "https://openreview.net/forum?id=niywLsa54R"
+            image: "/asset/pub/vitally.webp",
+            url: "https://openreview.net/forum?id=niywLsa54R",
+            pdf: "/asset/pdfs/vitally.pdf"
         },
         {
             title: "Multi-ContrastiveVAE disentangles perturbation effects in single cell images from optical pooled screens",
             authors: "Zitong Jerry Wang, Romain Lopez, Jan-Christian Hütter, Takamasa Kudo, Heming Yao, Philipp Hanslovsky, Burkhard Höckendorf, Rahul Moran, David Richmond, Aviv Regev",
             journal: "ICLR 2024 Workshop on Machine Learning for Genomics Explorations",
-            image: "/asset/pub/cell.webp",
-            url: "https://openreview.net/pdf?id=PcpeaehdlL"
+            image: "/asset/pub/mcvae.webp",
+            url: "https://openreview.net/pdf?id=PcpeaehdlL",
+            pdf: "/asset/pdfs/mcvae.pdf"
+        },
+        {
+            title: "A Supervised Contrastive Framework for Learning Disentangled Representations of Cell Perturbation Data",
+            authors: "Xinming Tu, Jan-Christian Hütter, Zitong Jerry Wang, Takamasa Kudo, Aviv Regev,Romain Lopez",
+            journal: "PMLR (2024)",
+            image: "/asset/pub/pmlr.webp",
+            url: "https://proceedings.mlr.press/v240/tu24a.html",
+            pdf: "/asset/pdfs/pmlr.pdf"
         },
         {
             title: "Localization of signaling receptors maximizes cellular information acquisition in spatially structured natural environments",
             authors: "Zitong Jerry Wang, Matt Thomson",
             journal: "Cell Systems (2022)",
-            image: "/asset/pub/cell_sense.webp",
-            url: "https://www.cell.com/cell-systems/fulltext/S2405-4712(22)00225-3"
+            image: "/asset/pub/receptor.webp",
+            url: "https://www.cell.com/cell-systems/fulltext/S2405-4712(22)00225-3",
+            pdf: "/asset/pdfs/receptor.pdf"
         },
         {
             title: "Inferring gene regulation dynamics from static snapshots of gene expression variability",
             authors: "Euan Joly-Smith, Zitong Jerry Wang, Andreas Hilfinger",
             journal: "Physical Review E (2021)",
-            image: "/asset/pub/clock.webp",
-            url: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.104.044406"
+            image: "/asset/pub/pre_2021.webp",
+            url: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.104.044406",
+            pdf: "/asset/pdfs/pre_2021.pdf"
         }
     ],
 
