@@ -112,9 +112,14 @@ const siteContent = {
             title: "Principal Investigator"
         },
         {
+            name: "Jiahao Zhang",
+            image: "/asset/team/jiahao_zhang.webp",
+            title: "Visiting Student"
+        },
+        {
             name: "Shiyu Jiang",
             image: "/asset/team/shiyu_jiang.webp",
-            title: "Visiting Student"
+            title: "Research Assistant"
         },
         {
             name: "Lanning Liu",
