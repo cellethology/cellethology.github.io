@@ -134,17 +134,17 @@ const siteContent = {
         {
             name: "Shiyu Jiang",
             image: "/asset/team/shiyu_jiang.webp",
-            title: "Research Assistant"
+            title: "Research Associate"
         },
         {
             name: "Lanning Liu",
             image: "/asset/team/lanning_liu.webp",
-            title: "Administrative Assistant"
+            title: "Lab Administrator"
         },
         {
             name: "Xuyin Liu",
             image: "/asset/team/xuyin_liu.webp",
-            title: "Research Assistant"
+            title: "Research Associate"
         },
     ]
 };
