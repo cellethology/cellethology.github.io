@@ -146,5 +146,10 @@ const siteContent = {
             image: "/asset/team/xuyin_liu.webp",
             title: "Research Associate"
         },
+        {
+            name: "Zelun Li",
+            image: "/asset/team/zelun_li.webp",
+            title: "Research Associate"
+        },
     ]
 };
