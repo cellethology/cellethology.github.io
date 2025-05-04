@@ -54,6 +54,14 @@ const siteContent = {
     // Publications
     allPublications: [
         {
+            title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
+            authors: "Kian Kenyon-Dean, Zitong Jerry Wang, John Urbanik, Konstantin Donhauser, Jason Hartford, Saber Saberian, Nil Sahin, Ihab Bendidi, Safiye Celik, Marta Fay, Juan Sebastián Rodríguez Vera, Imran S Haque, Oren Kraus ",
+            journal: "ICML (2025)",
+            image: "/asset/pub/vitally.webp",
+            url: "https://arxiv.org/abs/2411.02572",
+            pdf: "/asset/pdfs/vitally.pdf"
+        },
+        {
             title: "A cellular solution to a robotics problem",
             authors: "Zitong Jerry Wang, Matt Thomson",
             journal: "BioRxiv (2025)",
@@ -76,14 +84,6 @@ const siteContent = {
             image: "/asset/pub/counterfactual.webp",
             url: "https://www.nature.com/articles/s41551-025-01357-0",
             pdf: "/asset/pdfs/counterfactual.pdf"
-        },
-        {
-            title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
-            authors: "Kian Kenyon-Dean, Zitong Jerry Wang, John Urbanik, Konstantin Donhauser, Jason Hartford, Saber Saberian, Nil Sahin, Ihab Bendidi, Safiye Celik, Marta Fay, Juan Sebastián Rodríguez Vera, Imran S Haque, Oren Kraus ",
-            journal: "ICLR FM4Science Runner-up Best Paper (2024)",
-            image: "/asset/pub/vitally.webp",
-            url: "https://openreview.net/forum?id=niywLsa54R",
-            pdf: "/asset/pdfs/vitally.pdf"
         },
         {
             title: "Multi-ContrastiveVAE disentangles perturbation effects in single cell images from optical pooled screens",
