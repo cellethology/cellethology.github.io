@@ -54,6 +54,14 @@ const siteContent = {
     // Publications
     allPublications: [
         {
+            title: "Predicting function of evolutionarily implausible DNA sequences",
+            authors: "Shiyu Jiang, Xuyin Liu, Zitong Jerry Wang",
+            journal: "ArXiv (2025)",
+            image: "/asset/pub/nullsettes.webp",
+            url: "https://arxiv.org/abs/2506.10271",
+            pdf: "/asset/pdfs/nullsettes.pdf"
+        },
+        {
             title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
             authors: "Kian Kenyon-Dean, Zitong Jerry Wang, John Urbanik, Konstantin Donhauser, Jason Hartford, Saber Saberian, Nil Sahin, Ihab Bendidi, Safiye Celik, Marta Fay, Juan Sebastián Rodríguez Vera, Imran S Haque, Oren Kraus ",
             journal: "ICML (2025)",
