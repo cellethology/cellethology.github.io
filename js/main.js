@@ -1,3 +1,44 @@
+const imageMeta = {
+    "/asset/tissue_resized.webp": { width: 500, height: 500 },
+    "/asset/cajal_neuron_resized.webp": { width: 500, height: 375 },
+    "/asset/cube.webp": { width: 263, height: 263 },
+    "/asset/pub/CIFM.webp": { width: 215, height: 220 },
+    "/asset/pub/counterfactual.webp": { width: 220, height: 220 },
+    "/asset/pub/receptor.webp": { width: 220, height: 220 },
+    "/asset/pub/pre_2021.webp": { width: 220, height: 220 },
+    "/asset/pub/spatial_computation.webp": { width: 220, height: 220 },
+    "/asset/pub/tokenization.webp": { width: 220, height: 220 },
+    "/asset/pub/nullsettes.webp": { width: 220, height: 220 },
+    "/asset/pub/vitally.webp": { width: 220, height: 220 },
+    "/asset/pub/mcvae.webp": { width: 220, height: 220 },
+    "/asset/pub/pmlr.webp": { width: 220, height: 220 },
+    "/asset/team/jerry_wang.webp": { width: 571, height: 600 },
+    "/asset/team/jiahao_zhang.webp": { width: 511, height: 600 },
+    "/asset/team/lanning_liu.webp": { width: 583, height: 600 },
+    "/asset/team/shiyu_jiang.webp": { width: 465, height: 600 },
+    "/asset/team/xuyin_liu.webp": { width: 400, height: 600 },
+    "/asset/team/zelun_li.webp": { width: 450, height: 600 }
+};
+
+function buildImageAttributes(src, alt = "", options = {}) {
+    const meta = imageMeta[src] || {};
+    const attrs = [`src="${src}"`, `alt="${alt.replace(/"/g, '&quot;')}"`];
+    if (meta.width && meta.height) {
+        attrs.push(`width="${meta.width}"`, `height="${meta.height}"`);
+    }
+    const loading = options.loading ?? "lazy";
+    if (loading) {
+        attrs.push(`loading="${loading}"`);
+    }
+    if (options.decoding !== "auto") {
+        attrs.push(`decoding="async"`);
+    }
+    if (options.fetchpriority) {
+        attrs.push(`fetchpriority="${options.fetchpriority}"`);
+    }
+    return attrs.join(" ");
+}
+
 // Load content when the page is ready
 document.addEventListener('DOMContentLoaded', function() {
     // Update header content
@@ -25,8 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
         siteContent.researchAreas.forEach(area => {
             const areaElement = document.createElement('div');
             areaElement.className = 'research-card';
+            const areaImageAttrs = buildImageAttributes(area.image, area.title);
             areaElement.innerHTML = `
-                <img src="${area.image}">
+                <img ${areaImageAttrs}>
                 <h3>${area.title}</h3>
                 <p>${area.description}</p>
             `;
@@ -67,8 +109,9 @@ function loadPublications() {
             pubElement.href = pub.url;
             pubElement.target = "_blank";
             
+            const pubImageAttrs = buildImageAttributes(pub.image, pub.title);
             let innerContent = `
-                <img src="${pub.image}" loading="lazy">
+                <img ${pubImageAttrs}>
                 <div class="publication-text">
                     <h3>${pub.title}</h3>`;
 
@@ -100,8 +143,9 @@ function loadTeamMembers() {
         siteContent.teamMembers.forEach(member => {
             const memberElement = document.createElement('div');
             memberElement.className = 'team-member';
+            const memberImageAttrs = buildImageAttributes(member.image, member.name);
             memberElement.innerHTML = `
-                <img src="${member.image}" loading="lazy">
+                <img ${memberImageAttrs}>
                 <h3>${member.name}</h3>
                 <p>${member.title}</p>
             `;
