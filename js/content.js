@@ -54,20 +54,20 @@ const siteContent = {
     // Publications
     allPublications: [
         {
+            title: "Lost in Tokenization: Context as the Key to Unlocking Biomolecular Understanding in Scientific LLMs",
+            authors: "Kai Zhuang, Jiawei Zhang, Yumou Liu, Hanqun Cao, Chunbin Gu, Mengdi Liu, Zhangyang Gao, Zitong Jerry Wang, Xuanhe Zhou, Pheng-Ann Heng, Lijun Wu, Conghui He, Cheng Tan",
+            journal: "ICLR (2026)",
+            image: "/asset/pub/tokenization.webp",
+            url: "https://arxiv.org/abs/2510.23127",
+            pdf: "/asset/pdfs/tokenization.pdf"
+        },
+        {
             title: "A spatial representation of information underlies probabilistic computation in cells",
             authors: "Matt Thomson, Zitong Jerry Wang",
             journal: "BioRxiv (2025)",
             image: "/asset/pub/spatial_computation.webp",
             url: "https://www.biorxiv.org/content/10.1101/2025.02.12.637580v2",
             pdf: "/asset/pdfs/spatial_computation.pdf"
-        },
-        {
-            title: "Lost in Tokenization: Context as the Key to Unlocking Biomolecular Understanding in Scientific LLMs",
-            authors: "Kai Zhuang, Jiawei Zhang, Yumou Liu, Hanqun Cao, Chunbin Gu, Mengdi Liu, Zhangyang Gao, Zitong Jerry Wang, Xuanhe Zhou, Pheng-Ann Heng, Lijun Wu, Conghui He, Cheng Tan",
-            journal: "ArXiv (2025)",
-            image: "/asset/pub/tokenization.webp",
-            url: "https://arxiv.org/abs/2510.23127",
-            pdf: "/asset/pdfs/tokenization.pdf"
         },
         {
             title: "Predicting function of evolutionarily implausible DNA sequences",
