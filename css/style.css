@@ -291,6 +291,10 @@ section p {
     align-items: center;
 }
 
+.publications-page .join-us-content h1 {
+    margin-bottom: 1.5rem;
+}
+
 .view-all-publications {
     margin-top: 1rem;
     text-align: center;
