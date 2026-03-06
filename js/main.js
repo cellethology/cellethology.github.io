@@ -81,6 +81,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Load team members
     loadTeamMembers();
+
+    // Load alumni members
+    loadAlumniMembers();
     
 });
 
@@ -141,6 +144,33 @@ function loadTeamMembers() {
             teamMembersContainer.appendChild(memberElement);
         });
     }
+}
+
+function loadAlumniMembers() {
+    const alumniMembersContainer = document.getElementById('alumni-members');
+    if (!alumniMembersContainer) {
+        return;
+    }
+
+    alumniMembersContainer.innerHTML = '';
+    const alumniMembers = siteContent.alumniMembers || [];
+
+    if (alumniMembers.length === 0) {
+        const emptyItem = document.createElement('li');
+        emptyItem.className = 'alumni-empty';
+        emptyItem.textContent = 'Alumni list coming soon.';
+        alumniMembersContainer.appendChild(emptyItem);
+        return;
+    }
+
+    alumniMembers.forEach(member => {
+        const item = document.createElement('li');
+        item.className = 'alumni-item';
+        const name = member.name || '';
+        const currentPosition = member.currentPosition || '';
+        item.innerHTML = `<span class="alumni-name">${name}</span> <span class="alumni-position">${currentPosition}</span>`;
+        alumniMembersContainer.appendChild(item);
+    });
 }
 
 // Add scroll handler for nav bar transparency

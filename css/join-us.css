@@ -6,7 +6,8 @@
     width: 90%;
     margin-left: 55%;
     transform: translateX(-50%);
-    height: calc(100vh - 100px); /* Adjust based on your navbar and footer height */
+    min-height: calc(100vh - 100px); /* Keep full-height layout when content is short */
+    height: auto; /* Allow the page to expand for longer content (e.g., alumni list) */
 }
 
 .join-us-image {

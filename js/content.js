@@ -143,11 +143,6 @@ const siteContent = {
             title: "Principal Investigator"
         },
         {
-            name: "Jiahao Zhang",
-            image: "/asset/team/jiahao_zhang.webp",
-            title: "Visiting Student"
-        },
-        {
             name: "Shiyu Jiang",
             image: "/asset/team/shiyu_jiang.webp",
             title: "Research Associate"
@@ -167,5 +162,10 @@ const siteContent = {
             image: "/asset/team/zelun_li.webp",
             title: "Research Associate"
         },
+    ],
+
+    // Alumni Members
+    alumniMembers: [
+        { name: "Jiahao Zhang", currentPosition: "PhD student, MBUZAI" }
     ]
 };

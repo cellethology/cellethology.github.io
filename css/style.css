@@ -326,14 +326,22 @@ section p {
 /* Footer */
 footer {
     margin-top: var(--spacing-large);
-    padding-top: var(--spacing-medium);
+    padding-top: var(--spacing-large);
     /* border-top: 1px solid var(--border-color); */
     font-size: 0.75rem;
     font-weight: 200;
     max-width: 850px;
     margin: 0 auto;
     padding-bottom: var(--spacing-large); 
-    margin-bottom: 16rem; 
+    margin-bottom: 5rem; 
+}
+
+/* Align footer with the content column on join-us style pages */
+main.join-us-container + footer {
+    max-width: 1000px;
+    width: 90%;
+    margin-left: 55%;
+    transform: translateX(-50%);
 }
 
 footer p {
