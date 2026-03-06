@@ -82,17 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load team members
     loadTeamMembers();
     
-    // Update footer
-    const footerLabName = document.getElementById('footer-lab-name');
-    const footerDepartment = document.getElementById('footer-department');
-    
-    if (footerLabName) {
-        footerLabName.textContent = siteContent.footer.labName;
-    }
-    
-    if (footerDepartment) {
-        footerDepartment.textContent = siteContent.footer.department;
-    }
 });
 
 function loadPublications() {
