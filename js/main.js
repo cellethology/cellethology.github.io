@@ -13,11 +13,14 @@ const imageMeta = {
     "/asset/pub/mcvae.webp": { width: 220, height: 220 },
     "/asset/pub/pmlr.webp": { width: 220, height: 220 },
     "/asset/team/jerry_wang.webp": { width: 571, height: 600 },
+    "/asset/team/anze_tong.webp": { width: 400, height: 600 },
     "/asset/team/jiahao_zhang.webp": { width: 511, height: 600 },
     "/asset/team/lanning_liu.webp": { width: 583, height: 600 },
     "/asset/team/shiyu_jiang.webp": { width: 465, height: 600 },
     "/asset/team/xuyin_liu.webp": { width: 400, height: 600 },
-    "/asset/team/zelun_li.webp": { width: 450, height: 600 }
+    "/asset/team/zelun_li.webp": { width: 450, height: 600 },
+    "/asset/team/xinyu_wang.webp": { width: 450, height: 600 },
+    "/asset/team/yiran_zhang.webp": { width: 600, height: 396 }
 };
 
 function buildImageAttributes(src, alt = "", options = {}) {
@@ -39,8 +42,50 @@ function buildImageAttributes(src, alt = "", options = {}) {
     return attrs.join(" ");
 }
 
+function getLastNameSortKey(name = "") {
+    const parts = name.trim().split(/\s+/).filter(Boolean);
+    if (parts.length === 0) {
+        return "";
+    }
+    return parts[parts.length - 1].toLowerCase();
+}
+
+function sortByLastName(items) {
+    return [...items].sort((a, b) => {
+        const lastNameCompare = getLastNameSortKey(a.name).localeCompare(getLastNameSortKey(b.name));
+        if (lastNameCompare !== 0) {
+            return lastNameCompare;
+        }
+        return (a.name || "").localeCompare(b.name || "");
+    });
+}
+
+function requireNonEmptyField(value, fieldName, context) {
+    if (typeof value === "string" && value.trim() !== "") {
+        return;
+    }
+    throw new Error(`${context} is missing required field: ${fieldName}`);
+}
+
+function validatePeopleContent() {
+    (siteContent.teamMembers || []).forEach((member, index) => {
+        const context = `teamMembers[${index}] (${member.name || "unknown"})`;
+        requireNonEmptyField(member.name, "name", context);
+        requireNonEmptyField(member.image, "image", context);
+        requireNonEmptyField(member.title, "title", context);
+    });
+
+    (siteContent.alumniMembers || []).forEach((member, index) => {
+        const context = `alumniMembers[${index}] (${member.name || "unknown"})`;
+        requireNonEmptyField(member.name, "name", context);
+        requireNonEmptyField(member.currentPosition, "currentPosition", context);
+    });
+}
+
 // Load content when the page is ready
 document.addEventListener('DOMContentLoaded', function() {
+    validatePeopleContent();
+
     // Update header content
     const labNameElement = document.getElementById('lab-name');
     const labTaglineElement = document.getElementById('lab-tagline');
@@ -132,7 +177,7 @@ function loadTeamMembers() {
     const teamMembersContainer = document.getElementById('team-members');
     if (teamMembersContainer) {
         teamMembersContainer.innerHTML = ''; // Clear existing content
-        siteContent.teamMembers.forEach(member => {
+        sortByLastName(siteContent.teamMembers || []).forEach(member => {
             const memberElement = document.createElement('div');
             memberElement.className = 'team-member';
             const memberImageAttrs = buildImageAttributes(member.image, member.name);
@@ -153,7 +198,7 @@ function loadAlumniMembers() {
     }
 
     alumniMembersContainer.innerHTML = '';
-    const alumniMembers = siteContent.alumniMembers || [];
+    const alumniMembers = sortByLastName(siteContent.alumniMembers || []);
 
     if (alumniMembers.length === 0) {
         const emptyItem = document.createElement('li');

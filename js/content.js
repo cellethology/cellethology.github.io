@@ -143,14 +143,14 @@ const siteContent = {
             title: "Principal Investigator"
         },
         {
-            name: "Shiyu Jiang",
-            image: "/asset/team/shiyu_jiang.webp",
+            name: "Anze Tong",
+            image: "/asset/team/anze_tong.webp",
             title: "Research Associate"
         },
         {
-            name: "Lanning Liu",
-            image: "/asset/team/lanning_liu.webp",
-            title: "Lab Administrator"
+            name: "Yiran Zhang",
+            image: "/asset/team/yiran_zhang.webp",
+            title: "Research Associate"
         },
         {
             name: "Xuyin Liu",
@@ -158,14 +158,21 @@ const siteContent = {
             title: "Research Associate"
         },
         {
-            name: "Zelun Li",
-            image: "/asset/team/zelun_li.webp",
-            title: "Research Associate"
+            name: "Xinyu Wang",
+            image: "/asset/team/xinyu_wang.webp",
+            title: "PhD student"
+        },
+        {
+            name: "Lanning Liu",
+            image: "/asset/team/lanning_liu.webp",
+            title: "Lab Administrator"
         },
     ],
 
     // Alumni Members
     alumniMembers: [
-        { name: "Jiahao Zhang", currentPosition: "PhD student, MBUZAI" }
+        { name: "Jiahao Zhang", currentPosition: "PhD student, MBUZAI" },
+        { name: "Shiyu Jiang", currentPosition: "PhD student, USC" },
+        { name: "Zelun Li", currentPosition: "n/a" }
     ]
 };
