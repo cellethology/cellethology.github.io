@@ -23,9 +23,19 @@ const imageMeta = {
     "/asset/team/yiran_zhang.webp": { width: 600, height: 396 }
 };
 
+const ASSET_VERSION = "20260307-1";
+
+function withAssetVersion(url = "") {
+    if (!url.startsWith("/")) {
+        return url;
+    }
+    const separator = url.includes("?") ? "&" : "?";
+    return `${url}${separator}v=${ASSET_VERSION}`;
+}
+
 function buildImageAttributes(src, alt = "", options = {}) {
     const meta = imageMeta[src] || {};
-    const attrs = [`src="${src}"`, `alt="${alt.replace(/"/g, '&quot;')}"`];
+    const attrs = [`src="${withAssetVersion(src)}"`, `alt="${alt.replace(/"/g, '&quot;')}"`];
     if (meta.width && meta.height) {
         attrs.push(`width="${meta.width}"`, `height="${meta.height}"`);
     }
