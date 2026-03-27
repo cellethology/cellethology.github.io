@@ -13,6 +13,7 @@ const imageMeta = {
     "/asset/pub/mcvae.webp": { width: 220, height: 220 },
     "/asset/pub/pmlr.webp": { width: 220, height: 220 },
     "/asset/team/jerry_wang.webp": { width: 571, height: 600 },
+    "/asset/team/kai_zhuang.webp": { width: 571, height: 600 },
     "/asset/team/anze_tong.webp": { width: 400, height: 600 },
     "/asset/team/jiahao_zhang.webp": { width: 511, height: 600 },
     "/asset/team/lanning_liu.webp": { width: 583, height: 600 },
@@ -23,7 +24,7 @@ const imageMeta = {
     "/asset/team/yiran_zhang.webp": { width: 600, height: 396 }
 };
 
-const ASSET_VERSION = "20260307-1";
+const ASSET_VERSION = "20260327-2";
 
 function withAssetVersion(url = "") {
     if (!url.startsWith("/")) {

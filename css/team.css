@@ -100,13 +100,13 @@
     font-family: "Roboto Slab", serif;
     font-size: 1.2rem;
     margin-bottom: 0.2rem; /* Reduced margin-bottom */
-    text-align: right; /* Right-align the team member name */
+    text-align: left;
   }
   
   .team-member p {
     font-size: 0.8rem;
     color: #666;
-    text-align: right; /* Right-align the team member title */
+    text-align: left;
   }
   
   @media (max-width: 1024px) {

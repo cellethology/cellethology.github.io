@@ -143,6 +143,11 @@ const siteContent = {
             title: "Principal Investigator"
         },
         {
+            name: "Kai Zhuang",
+            image: "/asset/team/kai_zhuang.webp",
+            title: "PhD student, joint with Shanghai AI Lab"
+        },
+        {
             name: "Anze Tong",
             image: "/asset/team/anze_tong.webp",
             title: "Research Associate"
