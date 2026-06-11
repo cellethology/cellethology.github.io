@@ -54,6 +54,14 @@ const siteContent = {
     // Publications
     allPublications: [
         {
+            title: "Evaluating DNA Function Understanding in Genomic Language Models Using Evolutionarily Implausible Sequences",
+            authors: "Shiyu Jiang, Xuyin Liu, Zitong Jerry Wang",
+            journal: "ACS Synthetic Biology (2026)",
+            image: "/asset/pub/nullsettes.webp",
+            url: "https://pubs.acs.org/doi/10.1021/acssynbio.6c00024",
+            pdf: "/asset/pdfs/evaluating-dna-function-understanding-in-genomic-language-models-using-evolutionarily-implausible-sequences.pdf"
+        },
+        {
             title: "Lost in Tokenization: Context as the Key to Unlocking Biomolecular Understanding in Scientific LLMs",
             authors: "Kai Zhuang, Jiawei Zhang, Yumou Liu, Hanqun Cao, Chunbin Gu, Mengdi Liu, Zhangyang Gao, Zitong Jerry Wang, Xuanhe Zhou, Pheng-Ann Heng, Lijun Wu, Conghui He, Cheng Tan",
             journal: "ICLR (2026)",
@@ -64,18 +72,10 @@ const siteContent = {
         {
             title: "A spatial representation of information underlies probabilistic computation in cells",
             authors: "Matt Thomson, Zitong Jerry Wang",
-            journal: "BioRxiv (2025)",
+            journal: "BioRxiv (2026)",
             image: "/asset/pub/spatial_computation.webp",
             url: "https://www.biorxiv.org/content/10.1101/2025.02.12.637580v2",
             pdf: "/asset/pdfs/spatial_computation.pdf"
-        },
-        {
-            title: "Evaluating DNA Function Understanding in Genomic Language Models Using Evolutionarily Implausible Sequences",
-            authors: "Shiyu Jiang, Xuyin Liu, Zitong Jerry Wang",
-            journal: "ACS Synthetic Biology (2026)",
-            image: "/asset/pub/nullsettes.webp",
-            url: "https://pubs.acs.org/doi/10.1021/acssynbio.6c00024",
-            pdf: "/asset/pdfs/evaluating-dna-function-understanding-in-genomic-language-models-using-evolutionarily-implausible-sequences.pdf"
         },
         {
             title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",

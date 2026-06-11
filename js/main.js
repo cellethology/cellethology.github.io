@@ -143,13 +143,25 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
+// Extract the publication year from a journal/venue string,
+// e.g. "ACS Synthetic Biology (2026)" -> 2026, "ICLR 2024 Workshop ..." -> 2024.
+// Used to auto-sort the full publications list newest-first.
+function publicationYear(journal) {
+    const years = String(journal || '').match(/(?:19|20)\d{2}/g);
+    return years ? parseInt(years[years.length - 1], 10) : 0;
+}
+
 function loadPublications() {
     const publicationsList = document.getElementById('publications-list');
     if (publicationsList) {
         publicationsList.innerHTML = '';
-        
+
         const isAllPublications = document.body.classList.contains('publications-page');
-        const publications = isAllPublications ? siteContent.allPublications : siteContent.selectedPublications;
+        // Sort the full list by year (newest first). Array.sort is stable, so papers
+        // sharing a year keep their curated order in content.js.
+        const publications = isAllPublications
+            ? [...siteContent.allPublications].sort((a, b) => publicationYear(b.journal) - publicationYear(a.journal))
+            : siteContent.selectedPublications;
 
         publications.forEach(pub => {
             const pubElement = document.createElement('a');
