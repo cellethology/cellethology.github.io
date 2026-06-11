@@ -1,0 +1,60 @@
+name: Purge Cloudflare cache
+
+# After a push to main, wait for GitHub Pages to publish the new commit,
+# then purge Cloudflare's cache so the edge (and visitors) stop serving the
+# old HTML. Cloudflare here caches HTML with a long TTL, so the ?v= asset
+# version bump alone is not enough — the HTML layer must be purged too.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: read
+
+concurrency:
+  group: cloudflare-purge
+  cancel-in-progress: false
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for GitHub Pages to publish this commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for i in $(seq 1 40); do
+            data=$(gh api "repos/${{ github.repository }}/pages/builds/latest" 2>/dev/null || echo '{}')
+            status=$(echo "$data" | jq -r '.status // "unknown"')
+            commit=$(echo "$data" | jq -r '.commit // ""')
+            echo "attempt $i: status=$status commit=$commit (want ${{ github.sha }})"
+            if [ "$status" = "built" ] && [ "$commit" = "${{ github.sha }}" ]; then
+              echo "Pages published this commit."
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "Timed out waiting for Pages; purging anyway."
+          exit 0
+
+      - name: Purge Cloudflare cache
+        env:
+          CF_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$CF_ZONE_ID" ] || [ -z "$CF_API_TOKEN" ]; then
+            echo "::error::CLOUDFLARE_ZONE_ID and/or CLOUDFLARE_API_TOKEN secrets are not set."
+            exit 1
+          fi
+          resp=$(curl -s -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+            -H "Authorization: Bearer ${CF_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}')
+          echo "$resp"
+          echo "$resp" | jq -e '.success == true' >/dev/null \
+            || { echo "::error::Cloudflare purge failed"; exit 1; }
+          echo "Cloudflare cache purged."
