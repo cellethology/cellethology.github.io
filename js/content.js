@@ -70,12 +70,12 @@ const siteContent = {
             pdf: "/asset/pdfs/spatial_computation.pdf"
         },
         {
-            title: "Predicting function of evolutionarily implausible DNA sequences",
+            title: "Evaluating DNA Function Understanding in Genomic Language Models Using Evolutionarily Implausible Sequences",
             authors: "Shiyu Jiang, Xuyin Liu, Zitong Jerry Wang",
-            journal: "ArXiv (2025)",
+            journal: "ACS Synthetic Biology (2026)",
             image: "/asset/pub/nullsettes.webp",
-            url: "https://arxiv.org/abs/2506.10271",
-            pdf: "/asset/pdfs/nullsettes.pdf"
+            url: "https://pubs.acs.org/doi/10.1021/acssynbio.6c00024",
+            pdf: "/asset/pdfs/evaluating-dna-function-understanding-in-genomic-language-models-using-evolutionarily-implausible-sequences.pdf"
         },
         {
             title: "ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy",
